@@ -48,7 +48,7 @@
                 ;
         };
 
-        ipad_home: ipad_home {
+        globe_h: globe_h {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -58,7 +58,7 @@
                 ;
         };
 
-        ipad_dock: ipad_dock {
+        globe_a: globe_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -68,7 +68,7 @@
                 ;
         };
 
-        ipad_control_center: ipad_control_center {
+        globe_c: globe_c {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -148,7 +148,7 @@
 &mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V      &kp B                           &kp N      &kp M     &kp COMMA      &kp PERIOD      &mt2 RIGHT_SHIFT RIGHT_PARENTHESIS
 &kp LCTRL          &kp LWIN        &kp LEFT_ALT  &mo TERTIARY_WIN  &kp SPACE  &mkp MB1  &mkp LCLK  &mkp RCLK  &mo SECONDARY_LAYER  &kp BACKSLASH  &kp BACKSPACE   &kp ENTER
                    &kp LANGUAGE_2  &kp RIGHT     &kp DOWN   &kp LEFT   &kp UP    &kp UP     &kp LEFT   &kp DOWN  &kp RIGHT      &kp LANGUAGE_1
-&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                     &mkp LCLK      &mkp RCLK       &mkp MCLK
+&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                         &mkp LCLK      &mkp RCLK       &mkp MCLK
 &mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)  &kp LCTRL                       &mkp MB4   &mkp MB5  &kp LG(TAB)    &kp LG(D)       &kp LCTRL
             >;
         };
@@ -174,16 +174,16 @@
 &mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V      &kp B                           &kp N      &kp M     &kp COMMA      &kp PERIOD      &mt2 RIGHT_SHIFT RIGHT_PARENTHESIS
 &kp LGUI           &kp LCTRL       &kp LEFT_ALT  &mo TERTIARY_MAC  &kp SPACE  &mkp MB1  &mkp LCLK  &mkp RCLK  &mo SECONDARY_LAYER  &kp BACKSLASH  &kp BACKSPACE   &kp ENTER
                    &kp LANGUAGE_2  &kp RIGHT     &kp DOWN   &kp LEFT   &kp UP    &kp UP     &kp LEFT   &kp DOWN  &kp RIGHT      &kp LANGUAGE_1
-&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                     &mkp LCLK      &mkp RCLK       &mkp MCLK
-&mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LC(UP)  &kp LCTRL                      &mkp MB4   &mkp MB5  &kp LG(TAB)    &kp LC(UP)     &kp LCTRL
+&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                         &mkp LCLK      &mkp RCLK       &mkp MCLK
+&kp LG(LEFT_BRACKET) &kp LG(RIGHT_BRACKET) &kp LC(UP_ARROW) &kp F11 &kp LCTRL             &kp LG(LEFT_BRACKET) &kp LG(RIGHT_BRACKET) &kp LC(UP_ARROW) &kp F11 &kp LCTRL
             >;
         };
 
         tertiary_mac_layer {
             display-name = "TERTIARY_MAC";
             bindings = <
-&kp LC(SPACE)  &kp F9  &kp F10  &kp F11  &kp F12                  &kp LG(LEFT)    &kp PAGE_UP    &kp UP_ARROW    &kp PAGE_DOWN  &kp LC(UP)
-&kp TAB        &kp F5  &kp F6   &kp F7   &kp F8                   &kp LG(RIGHT)   &kp LEFT       &kp DOWN_ARROW  &kp RIGHT      &kp LC(DOWN)
+&kp LC(SPACE)  &kp F9  &kp F10  &kp F11  &kp F12                  &kp LG(LEFT)    &kp PAGE_UP    &kp UP_ARROW    &kp PAGE_DOWN  &kp DELETE
+&kp TAB        &kp F5  &kp F6   &kp F7   &kp F8                   &kp LG(RIGHT)   &kp LEFT       &kp DOWN_ARROW  &kp RIGHT      &kp APOS
 &kp LG(W)      &kp F1  &kp F2   &kp F4   &kp F4                   &kp LC(LEFT)    &kp LC(RIGHT)  &trans          &kp MINUS      &kp EQUAL
 &trans         &trans  &trans   &trans   &trans   &trans  &trans  &trans         &trans         &trans          &trans         &trans
                &trans  &trans   &trans   &trans   &trans  &trans  &trans         &trans         &trans          &trans
@@ -200,21 +200,21 @@
 &mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V      &kp B                           &kp N      &kp M     &kp COMMA      &kp PERIOD      &mt2 RIGHT_SHIFT RIGHT_PARENTHESIS
 &kp LGUI           &kp GLOBE       &kp LEFT_ALT  &mo TERTIARY_IPAD  &kp SPACE  &mkp MB1  &mkp LCLK  &mkp RCLK  &mo SECONDARY_LAYER  &kp BACKSLASH  &kp BACKSPACE   &kp ENTER
                    &kp LANGUAGE_2  &kp RIGHT     &kp DOWN   &kp LEFT   &kp UP    &kp UP     &kp LEFT   &kp DOWN  &kp RIGHT      &kp LANGUAGE_1
-&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                       &mkp LCLK      &mkp RCLK       &mkp MCLK
-&mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(SPACE)  &kp GLOBE                   &mkp MB4   &mkp MB5  &kp LG(TAB)    &kp LG(SPACE)  &kp GLOBE
+&mkp LCLK          &mkp RCLK       &mkp MCLK                                                                         &mkp LCLK      &mkp RCLK       &mkp MCLK
+&kp LG(LEFT_BRACKET) &kp LG(RIGHT_BRACKET) &kp LG(TAB) &globe_h &kp GLOBE                    &kp LG(LEFT_BRACKET) &kp LG(RIGHT_BRACKET) &kp LG(TAB) &globe_h &kp GLOBE
             >;
         };
 
         tertiary_ipad_layer {
             display-name = "TERTIARY_IPAD";
             bindings = <
-&kp LG(SPACE)  &kp F9  &kp F10  &kp F11  &kp F12                  &kp LG(LEFT)    &kp PAGE_UP              &kp UP_ARROW    &kp PAGE_DOWN  &ipad_home
-&kp TAB        &kp F5  &kp F6   &kp F7   &kp F8                   &kp LG(RIGHT)   &kp LEFT                 &kp DOWN_ARROW  &kp RIGHT      &ipad_dock
-&kp LG(W)      &kp F1  &kp F2   &kp F4   &kp F4                   &kp LG(TAB)     &ipad_control_center     &trans          &kp MINUS      &kp EQUAL
-&trans         &trans  &trans   &trans   &trans   &trans  &trans  &trans         &trans                   &trans          &trans         &trans
-               &trans  &trans   &trans   &trans   &trans  &trans  &trans         &trans                   &trans          &trans
-&trans         &trans  &trans                                                                               &trans          &trans         &trans
-&trans         &trans  &trans   &trans   &trans                   &trans         &trans                   &trans          &trans         &trans
+&kp LG(SPACE)  &kp F9  &kp F10  &kp F11  &kp F12                  &kp LG(LEFT)    &kp PAGE_UP    &kp UP_ARROW    &kp PAGE_DOWN  &kp DELETE
+&kp TAB        &kp F5  &kp F6   &kp F7   &kp F8                   &kp LG(RIGHT)   &kp LEFT       &kp DOWN_ARROW  &kp RIGHT      &kp APOS
+&kp LG(W)      &kp F1  &kp F2   &kp F4   &kp F4                   &globe_a        &globe_c       &trans          &kp MINUS      &kp EQUAL
+&trans         &trans  &trans   &trans   &trans   &trans  &trans  &trans         &trans         &trans          &trans         &trans
+               &trans  &trans   &trans   &trans   &trans  &trans  &trans         &trans         &trans          &trans
+&trans         &trans  &trans                                                                       &trans          &trans         &trans
+&trans         &trans  &trans   &trans   &trans                   &trans         &trans         &trans          &trans         &trans
             >;
         };
 
@@ -227,7 +227,7 @@
 &trans            &trans             &trans          &trans           &trans        &trans  &kp DEL  &trans            &trans             &trans            &kp KP_DOT        &kp KP_DIVIDE
                   &trans             &trans          &trans           &trans        &trans  &trans   &trans            &trans             &trans            &trans
 &trans            &trans             &trans                                                                                               &trans            &trans            &trans
-&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans          &trans           &trans                         &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans            &trans            &trans
+&trans            &trans             &trans          &trans           &trans                         &trans            &trans             &trans            &trans            &trans
             >;
         };
 

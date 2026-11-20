@@ -89,10 +89,10 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp Q              &kp W           &kp E         &kp R      &kp T                               &kp Y      &kp U     &kp I          &kp O           &mt2 BACKSPACE P
-&kp A              &kp S           &kp D         &kp F      &kp G                               &kp H      &kp J     &kp K          &kp L           &mt2 ENTER SEMICOLON
+&kp Q              &kp W           &kp E         &kp R      &kp T                               &kp Y      &kp U     &kp I          &kp O           &kp P
+&kp A              &kp S           &kp D         &kp F      &kp G                               &kp H      &kp J     &kp K          &kp L           &kp SEMICOLON
 &mt2 LEFT_SHIFT Z  &kp X           &kp C         &kp V      &kp B                               &kp N      &kp M     &kp COMMA      &kp PERIOD      &mt RIGHT_SHIFT SLASH
-&kp LCTRL          &kp LWIN        &kp LEFT_ALT  &mo 2      &kp SPACE  &mkp MB1  &kp BACKSPACE  &kp ENTER  &mo 1     &kp BACKSLASH  &kp BACKSPACE   &kp ENTER
+&kp LCTRL          &kp LWIN        &kp LEFT_ALT  &lt TERTIARY_LAYER SPACE  &mkp LCLK  &mkp RCLK  &kp RCTRL  &kp BACKSPACE  &lt SECONDARY_LAYER ENTER  &kp BACKSLASH  &kp LANGUAGE_2  &kp LANGUAGE_1
                    &kp LANGUAGE_2  &kp RIGHT     &kp DOWN   &kp LEFT   &kp UP    &kp UP         &kp LEFT   &kp DOWN  &kp RIGHT      &kp LANGUAGE_1
 &mkp LCLK          &mkp RCLK       &mkp MCLK                                                                         &mkp LCLK      &mkp RCLK       &mkp MCLK
 &mkp MB4           &mkp MB5        &kp LG(TAB)   &kp LG(D)  &kp LCTRL                           &mkp MB4   &mkp MB5  &kp LG(TAB)    &kp LG(D)       &kp LCTRL
@@ -115,9 +115,9 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&kp LA(GRAVE)   &kp F9  &kp F10  &kp F11  &kp F12                  &kp HOME         &kp PAGE_UP        &kp UP_ARROW    &kp PAGE_DOWN  &kp DELETE
+&kp LANGUAGE_2  &kp F9  &kp F10  &kp F11  &kp F12                  &kp HOME         &kp PAGE_UP        &kp UP_ARROW    &kp PAGE_DOWN  &kp LANGUAGE_1
 &kp TAB         &kp F5  &kp F6   &kp F7   &kp F8                   &kp END          &kp LEFT           &kp DOWN_ARROW  &kp RIGHT      &kp APOS
-&kp LEFT_SHIFT  &kp F1  &kp F2   &kp F3   &kp F4                   &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans          &kp MINUS      &kp EQUAL
+&kp LEFT_SHIFT  &kp F1  &kp F2   &kp F3   &kp F4                   &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp DELETE      &kp MINUS      &kp EQUAL
 &trans          &trans  &trans   &trans   &trans   &trans  &trans  &trans           &trans             &trans          &trans         &trans
                 &trans  &trans   &trans   &trans   &trans  &trans  &trans           &trans             &trans          &trans
 &trans          &trans  &trans                                                                         &trans          &trans         &trans
@@ -141,10 +141,10 @@
         MAC_DEFAULT_LAYER {
             display-name = "mac_default";
             bindings = <
-&kp Q                 &kp W                  &kp E             &kp R          &kp T                               &kp Y                 &kp U                  &kp I             &kp O           &mt2 BACKSPACE P
-&kp A                 &kp S                  &kp D             &kp F          &kp G                               &kp H                 &kp J                  &kp K             &kp L           &mt2 ENTER SEMICOLON
+&kp Q                 &kp W                  &kp E             &kp R          &kp T                               &kp Y                 &kp U                  &kp I             &kp O           &kp P
+&kp A                 &kp S                  &kp D             &kp F          &kp G                               &kp H                 &kp J                  &kp K             &kp L           &kp SEMICOLON
 &mt2 LEFT_SHIFT Z     &kp X                  &kp C             &kp V          &kp B                               &kp N                 &kp M                  &kp COMMA         &kp PERIOD      &mt RIGHT_SHIFT SLASH
-&kp LGUI              &kp LCTRL              &kp LEFT_ALT      &mo MAC_TERTIARY_LAYER  &kp SPACE  &mkp MB1  &kp BACKSPACE  &kp ENTER  &mo MAC_SECONDARY_LAYER  &kp BACKSLASH     &kp LANGUAGE_2  &kp LANGUAGE_1
+&kp LGUI              &kp LCTRL              &kp LEFT_ALT      &lt MAC_TERTIARY_LAYER SPACE  &mkp LCLK  &mkp RCLK  &kp RGUI  &kp BACKSPACE  &lt MAC_SECONDARY_LAYER ENTER  &kp BACKSLASH     &kp LANGUAGE_2  &kp LANGUAGE_1
                       &kp LANGUAGE_2         &kp RIGHT         &kp DOWN       &kp LEFT   &kp UP    &kp UP         &kp LEFT   &kp DOWN               &kp RIGHT         &kp LANGUAGE_1
 &mkp LCLK             &mkp RCLK              &mkp MCLK                                                                                                            &mkp LCLK         &mkp RCLK       &mkp MCLK
 &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(UP_ARROW)  &kp F11        &kp LGUI                            &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(UP_ARROW)  &kp F11         &kp LGUI

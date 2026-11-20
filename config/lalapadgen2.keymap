@@ -115,9 +115,9 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&kp LANGUAGE_2  &kp F9  &kp F10  &kp F11  &kp F12                  &kp HOME         &kp PAGE_UP        &kp UP_ARROW    &kp PAGE_DOWN  &kp LANGUAGE_1
+&kp LA(GRAVE)   &kp F9  &kp F10  &kp F11  &kp F12                  &kp HOME         &kp PAGE_UP        &kp UP_ARROW    &kp PAGE_DOWN  &kp DELETE
 &kp TAB         &kp F5  &kp F6   &kp F7   &kp F8                   &kp END          &kp LEFT           &kp DOWN_ARROW  &kp RIGHT      &kp APOS
-&kp LEFT_SHIFT  &kp F1  &kp F2   &kp F3   &kp F4                   &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp DELETE      &kp MINUS      &kp EQUAL
+&kp LEFT_SHIFT  &kp F1  &kp F2   &kp F3   &kp F4                   &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans          &kp MINUS      &kp EQUAL
 &trans          &trans  &trans   &trans   &trans   &trans  &trans  &trans           &trans             &trans          &trans         &trans
                 &trans  &trans   &trans   &trans   &trans  &trans  &trans           &trans             &trans          &trans
 &trans          &trans  &trans                                                                         &trans          &trans         &trans
